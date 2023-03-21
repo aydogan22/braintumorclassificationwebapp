@@ -5,3 +5,7 @@ Pillow
 streamlit
 glob2
 requests_toolbelt
+Image
+os
+requests
+io

@@ -138,7 +138,7 @@ with tab2:
         # st.header("Aydogan")
         # st.write(os.getcwd())
 
-        image = Image.open(dirname + "/aydogan.JPG")
+        image = Image.open(dirname + "/aydogan.png")
 
         # Create container with centered image
         with st.container():
@@ -153,7 +153,7 @@ with tab2:
             # st.subheader('Researcher on Geospatial Analysis')
 
     with col2:
-        image2 = Image.open(dirname + "/victor.jpg")
+        image2 = Image.open(dirname + "/victor.png")
 
         # st.header("Victor")
 
@@ -171,7 +171,7 @@ with tab2:
     with col3:
         # st.header("Aurélien Biais")
 
-        image3 = Image.open(dirname + "/aurelien.jpg")
+        image3 = Image.open(dirname + "/aurelien.png")
 
         with st.container():
             st.markdown(
@@ -185,7 +185,7 @@ with tab2:
 
     with col4:
         # st.header("Aurélien Biais")
-        image4 = Image.open(dirname + "/ivan.jpg")
+        image4 = Image.open(dirname + "/ivan.png")
 
         with st.container():
             st.markdown(

@@ -4,7 +4,7 @@ import os
 # from tqdm import tqdm
 import requests
 import time
-
+from requests_toolbelt.multipart.encoder import MultipartEncoder
 import io
 # interact with FastAPI endpoint
 

@@ -4,9 +4,10 @@ import os
 # from tqdm import tqdm
 import requests
 import time
-from requests_toolbelt.multipart.encoder import MultipartEncoder
+
 import io
 # interact with FastAPI endpoint
+
 
 
 backend = "https://btc-w3zkxihrsq-ey.a.run.app/predict4"
@@ -53,7 +54,7 @@ with tab1:
     col1.write("")
     col1.write("")
 
-    col1.title("Upload a brain MRI 📥")
+    col1.title("Upload a brain MRI scan 📥")
     uploaded_file = col1.file_uploader("", type="jpg")
     if uploaded_file:
         # Hide filename on UI
@@ -135,19 +136,28 @@ with tab2:
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        # st.header("Aydogan")
+        #st.header("Aydogan")
         # st.write(os.getcwd())
 
+
         image = Image.open(dirname + "/aydogan.png")
+
 
         # Create container with centered image
         with st.container():
             st.markdown(
                 "<h1 style='text-align: center'><a href='https://github.com/aydogan22'>Aydoğan</a></h1>",
                 unsafe_allow_html=True,
-            )
+                )
 
             col1.info("Researcher on Geospatial Analysis")
+            #col1.markdown('[![📆](https://github.com/aydogan22)]', unsafe_allow_html=True)
+
+            #This put rocket emoji below the personal info
+            #col1.markdown(
+            #    "<h1 style='text-align: center'><a href='https://github.com/aydogan22'>\U0001F680</a></h1>",
+            #    unsafe_allow_html=True,
+            #)
             # st.markdown('[Github](https://github.com/aydogan22)')
             st.image(image, use_column_width=True)
             # st.subheader('Researcher on Geospatial Analysis')
